@@ -72,7 +72,7 @@ class Particle{
         if (total > 0) {
             avg.div(total);
             avg.sub(this.velocity);
-            avg.mult(0.0005)
+            avg.mult(0.001)
             this.acceleration = avg; // Use acceleration to accumulate forces
         }
     }
